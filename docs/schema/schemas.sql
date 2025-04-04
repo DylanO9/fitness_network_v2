@@ -1,11 +1,11 @@
 CREATE TABLE Users (
-    user_id INT PRIMARY KEY,
+    user_id SERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    phone_number VARCHAR(15) NOT NULL, 
+    phone_number VARCHAR(15) NOT NULL
 );
 
 CREATE TABLE Foods (
