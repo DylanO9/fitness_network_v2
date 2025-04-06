@@ -76,7 +76,7 @@ export default function App() {
   const checkAuthStatus = async () => {
     try {
       const token = await AsyncStorage.getItem('userToken');
-      setIsAuthenticated(true);
+      setIsAuthenticated(!!token);
     } catch (error) {
       console.error('Error checking auth status:', error);
     } finally {
