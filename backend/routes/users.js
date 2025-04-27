@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 });
 
 // POST new user
-router.post('/', async (req, res) => {
+router.post('/signup', async (req, res) => {
     const { username, password, email, first_name, last_name, phone_number } = req.body;
     
     try {
