@@ -42,7 +42,7 @@ CREATE TABLE Exercises (
     name VARCHAR(100) NOT NULL,
     sets INT NOT NULL,
     reps INT NOT NULL,
-    rest_time INT NOT NULL, -- in seconds
+    rest_time INT NOT NULL,
     FOREIGN KEY (split_id) REFERENCES Splits(split_id)
 );
 
